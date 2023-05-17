@@ -13,7 +13,7 @@ import (
 /**
  * @Author XiaoLi
  * @Description //TODO 创建帖子
- * @Date 19:53 2022/12/29
+ * @Date 19:53 2022/12/25
  **/
 // CreatePost 创建帖子
 func CreatePost(post *models.Post) (err error) {
@@ -25,6 +25,27 @@ func CreatePost(post *models.Post) (err error) {
 	if err != nil {
 		zap.L().Error("insert post failed", zap.Error(err))
 		err = ErrorInsertFailed
+		return
+	}
+	return
+}
+
+/**
+ * @Author XiaoLi
+ * @Description //TODO 根据Id删除帖子
+ * @Date 19:59 2022/12/25
+ **/
+func DeletePostByID(pid int64) (err error) {
+	sqlStr := `delete from post
+	where post_id = ?`
+	_, err = db.Exec(sqlStr, pid)
+	if err == sql.ErrNoRows {
+		err = ErrorInvalidID
+		return
+	}
+	if err != nil {
+		zap.L().Error("query post failed", zap.String("sql", sqlStr), zap.Error(err))
+		err = ErrorQueryFailed
 		return
 	}
 	return

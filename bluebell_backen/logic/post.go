@@ -50,6 +50,22 @@ func CreatePost(post *models.Post) (err error) {
 
 /**
  * @Author XiaoLi
+ * @Description //TODO 删除帖子
+ * @Date 19:56 2022/12/31
+ **/
+func DeletePost(postID int64) (err error) {
+	err = mysql.DeletePostByID(postID)
+	if err != nil {
+		zap.L().Error("mysql.GetPostByID(postID) failed",
+			zap.Int64("postID", postID),
+			zap.Error(err))
+		return err
+	}
+	return
+}
+
+/**
+ * @Author XiaoLi
  * @Description //TODO 根据Id查询帖子详情
  * @Date 21:39 2022/12/31
  **/

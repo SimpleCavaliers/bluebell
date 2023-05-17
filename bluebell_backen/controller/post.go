@@ -13,7 +13,7 @@ import (
 /**
  * @Author XiaoLi
  * @Description //TODO 创建帖子
- * @Date 17:40 2022/12/30
+ * @Date 17:40 2022/12/25
  **/
 // CreatePostHandler 创建帖子
 // @Summary 创建帖子
@@ -52,6 +52,33 @@ func CreatePostHandler(c *gin.Context) {
 		ResponseError(c, CodeServerBusy)
 		return
 	}
+	// 3、返回响应
+	ResponseSuccess(c, nil)
+}
+
+/**
+* @Author XiaoLi
+* @Description //TODO 根据Id删除帖子
+* @Date 17:41 2022/12/25
+**/
+func DeletePostHandler(c *gin.Context) {
+	// 1、获取参数(从URL中获取帖子的id)
+	postIdStr := c.Param("id")
+	postId, err := strconv.ParseInt(postIdStr, 10, 64)
+	if err != nil {
+		zap.L().Error("get post detail with invalid param", zap.Error(err))
+		ResponseError(c, CodeInvalidParams)
+		return
+	}
+
+	// 2、根据id删除帖子
+	err = logic.DeletePost(postId)
+	if err != nil {
+		zap.L().Error("logic.DeletePost(postID) failed", zap.Error(err))
+		ResponseError(c, CodeServerBusy)
+		return
+	}
+
 	// 3、返回响应
 	ResponseSuccess(c, nil)
 }
