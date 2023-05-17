@@ -15,11 +15,10 @@
 ![postman_example](./doc/pictures/postman.png)
 
 ## 项目全套笔记
-- **基于雪花算法生成用户ID**
-- - https://www.yuque.com/docs/share/e50bbca1-e019-45e2-b77b-a9ba01fbede3?# 《基于雪花算法生成用户ID》
+- [基于雪花算法生成用户ID](https://www.yuque.com/docs/share/e50bbca1-e019-45e2-b77b-a9ba01fbede3?#)
 - [gin框架中使用validator若干实用技巧](https://www.liwenzhou.com/posts/Go/validator_usages/)
-- [《限制账号同一时间只能登录一个设备》](https://www.yuque.com/docs/share/584ddd0f-5158-4cea-8918-a4b6e1d41a07?# )
-- [《基于Cookie、Session和基于Token的认证模式介绍》](https://www.yuque.com/docs/share/06a89a55-3e3c-452b-aeb1-acf4d2bac8a5?#)
+- [限制账号同一时间只能登录一个设备](https://www.yuque.com/docs/share/584ddd0f-5158-4cea-8918-a4b6e1d41a07?# )
+- [基于Cookie、Session和基于Token的认证模式介绍](https://www.yuque.com/docs/share/06a89a55-3e3c-452b-aeb1-acf4d2bac8a5?#)
 - [在gin框架中使用JWT认证](https://www.liwenzhou.com/posts/Go/jwt_in_gin/)
 - [为Go项目编写Makefile](https://www.liwenzhou.com/posts/Go/makefile/)
 - [使用Air实现Go程序实时热重载](https://www.liwenzhou.com/posts/Go/live_reload_with_air/)
