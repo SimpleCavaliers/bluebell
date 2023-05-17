@@ -10,6 +10,10 @@
 7. Go语言操作MySQL
 8. Go语言操作Redis
 
+## 接口测试
+- **postman工具**
+![postman_example](./doc/pictures/postman.png)
+
 ## 项目全套笔记
 - **基于雪花算法生成用户ID**
 - - https://www.yuque.com/docs/share/e50bbca1-e019-45e2-b77b-a9ba01fbede3?# 《基于雪花算法生成用户ID》
