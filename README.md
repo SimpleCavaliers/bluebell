@@ -10,44 +10,7 @@
 7. Go语言操作MySQL
 8. Go语言操作Redis
 
-## 项目目录结构
-
-```bash
-├── bin
-│   └── bluebell
-├── conf
-│   └── config.yaml
-├── static
-│   ├── css
-│   │   └── app.0afe9dae.css
-│   ├── favicon.ico
-│   ├── img
-│   │   ├── avatar.7b0a9835.png
-│   │   ├── iconfont.cdbe38a0.svg
-│   │   ├── logo.da56125f.png
-│   │   └── search.8e85063d.png
-│   └── js
-│       ├── app.9f3efa6d.js
-│       ├── app.9f3efa6d.js.map
-│       ├── chunk-vendors.57f9e9d6.js
-│       └── chunk-vendors.57f9e9d6.js.map
-└── templates
-    └── index.html
-```
-
-## 项目预览图
-
-[![bCORoR.png](https://s4.ax1x.com/2022/02/23/bCORoR.png)](https://imgtu.com/i/bCORoR)
-
 ## 项目全套笔记
-
-- **视频教程地址**：[GoWeb进阶—两周开发一个基于vue+go+gin+mysql+redis的博客论坛web项目！！！从零到部署上线](https://www.bilibili.com/video/BV1Fb4y14747?spm_id_from=333.999.0.0)
-- **GitHub仓库**：https://github.com/mao888/bluebell
-- **GitEE仓库**：https://gitee.com/hu_maomao/bluebell
-- 编程：用代码解决生活中的问题
-- **技术与知识的区别**：
-- - 知识：记住地球是圆的
-  - 技术：自己学会游泳，自己学会开车 
 - **基于雪花算法生成用户ID**
 - - https://www.yuque.com/docs/share/e50bbca1-e019-45e2-b77b-a9ba01fbede3?# 《基于雪花算法生成用户ID》
 - [gin框架中使用validator若干实用技巧](https://www.liwenzhou.com/posts/Go/validator_usages/)
